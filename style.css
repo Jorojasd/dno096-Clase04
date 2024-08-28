@@ -1,0 +1,64 @@
+        html,body {
+                font-family: Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                cursor: crosshair; color: #000000;
+
+            }
+            
+            main{
+                width: 100vW;
+                height:100vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            canvas {
+                display: block;
+                box-shadow: 0 0 5px dimgray;
+            }
+            
+            header {
+                position: absolute;
+                top: 1rem;
+                left: 3rem;
+                z-index: 2;
+                width:calc(100vw * 0.9);
+                color: #f00;
+            }
+
+            @media (orientation: landscape){
+                header {
+                    width:calc(100vw * 0.5);                    
+                }
+            }
+
+            p{
+                line-height:2;
+                color: #000;
+            }
+
+            code{
+                color:#ff0000;
+                font-size:1rem;
+            }
+
+            aside{
+                z-index: 2;
+                position: absolute;
+                left: 1rem;
+                botttom: 1rem;
+            }
+
+            a{
+                color:black;
+                text-decoration: none;
+                margin-right: 2rem;
+            }
+
+            a.activo{
+                font-weight: bold;
+                text-decoration: underline;
+            } 
